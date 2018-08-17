@@ -9,6 +9,6 @@ public interface P2TestInterface {
 	public boolean deleteTestData(int tid);
 	public P2TestAnn findTestDatabyId(int tid);
 	public List<P2TestAnn> getAllTests();
-	public void dropTestData();
+	public void closeSession();
 	public boolean update_test_data(int tid, String result);
 }

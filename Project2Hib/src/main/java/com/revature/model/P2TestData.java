@@ -5,6 +5,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -19,10 +21,11 @@ public class P2TestData {
 	@Column(name = "DATAID", nullable = false, precision = 10)
 	private int did;
 	
+	//Takes in Batch, Location and Trainer Objects in JSON form
 	@Column(name = "DATA", length = 40)
 	private String data;
 	
-	@Column(name = "TESTID",nullable = false, precision = 10)
+	@Column(name = "TESTID",nullable = false)
 	private int tid;
 
 	public P2TestData() {

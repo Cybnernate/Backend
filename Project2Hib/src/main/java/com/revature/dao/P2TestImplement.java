@@ -28,9 +28,7 @@ public class P2TestImplement implements P2TestInterface{
 				t1.rollback();
 			}
 		}
-		finally {
-			session.close();
-		}
+		
 		return false;
 	}
 
@@ -51,9 +49,7 @@ public class P2TestImplement implements P2TestInterface{
 				t1.rollback();
 			}
 		}
-		finally {
-			session.close();
-		}
+		
 		return false;
 	}
 
@@ -71,9 +67,7 @@ public class P2TestImplement implements P2TestInterface{
 				t1.rollback();
 			}
 		}
-		finally {
-			session.close();
-		}
+		
 		return null;
 	}
 
@@ -91,15 +85,13 @@ public class P2TestImplement implements P2TestInterface{
 				t1.rollback();
 			}
 		}
-		finally {
-			session.close();
-		}
+		
 		return null;
 	}
 
-	public void dropTestData() {
-		//Don't use for now
-		
+	public void closeSession() {
+		Session session = HibernateUtil.getSession().openSession();
+		session.close();
 	}
 
 	public boolean update_test_data(int tid, String result) {
@@ -118,9 +110,7 @@ public class P2TestImplement implements P2TestInterface{
 				t1.rollback();
 			}
 		}
-		finally {
-			session.close();
-		}
+		
 		return false;
 	}
 

@@ -1,12 +1,17 @@
 package com.revature.model;
 
+import java.util.List;
+import java.util.Set;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinTable;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -29,23 +34,20 @@ public class P2TestAnn {
 	
 	@Column(name = "TESTRESULT", length = 40)
 	private String tresult;
+	
+	@Column(name = "TESTDATA", length = 200)
+	private String testData;
 
 	public P2TestAnn() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public P2TestAnn(int tid, String tname, String tresult) {
-		super();
-		this.tid = tid;
-		this.tname = tname;
-		this.tresult = tresult;
-	}
-
-	public P2TestAnn(String tname, String tresult) {
+	public P2TestAnn(String tname, String tresult, String testData) {
 		super();
 		this.tname = tname;
 		this.tresult = tresult;
+		this.testData = testData;
 	}
 
 	public int getTid() {
@@ -72,12 +74,19 @@ public class P2TestAnn {
 		this.tresult = tresult;
 	}
 
-	
+	public String getTestData() {
+		return testData;
+	}
+
+	public void setTestData(String testData) {
+		this.testData = testData;
+	}
 
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((testData == null) ? 0 : testData.hashCode());
 		result = prime * result + tid;
 		result = prime * result + ((tname == null) ? 0 : tname.hashCode());
 		result = prime * result + ((tresult == null) ? 0 : tresult.hashCode());
@@ -93,6 +102,11 @@ public class P2TestAnn {
 		if (getClass() != obj.getClass())
 			return false;
 		P2TestAnn other = (P2TestAnn) obj;
+		if (testData == null) {
+			if (other.testData != null)
+				return false;
+		} else if (!testData.equals(other.testData))
+			return false;
 		if (tid != other.tid)
 			return false;
 		if (tname == null) {
@@ -110,8 +124,8 @@ public class P2TestAnn {
 
 	@Override
 	public String toString() {
-		return "P2TestAnn [tid=" + tid + ", tname=" + tname + ", tresult=" + tresult + "]";
+		return "P2TestAnn [tid=" + tid + ", tname=" + tname + ", tresult=" + tresult + ", testData=" + testData + "]";
 	}
-	
+
 	
 }
