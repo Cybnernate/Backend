@@ -22,17 +22,18 @@ public class AppieTest {
 //		System.out.println(theString);
 		Gson g = new Gson();
 		
-		P2Batch batch = new P2Batch("JTA Full Stack", "Java", 5, 4, "Yuvi", "N/A", "VA", "Plaza America", "201");
-		P2Location location = new P2Location(null, null, null);
-		P2Trainer trainer = new P2Trainer(null, null, null, args);
-		P2User user = new P2User(null, null);
+//		P2Batch batch = new P2Batch("JTA Full Stack", "Java", 5, 4, "Yuvi", "N/A", "VA", "Plaza America", "201");
+//		P2Location location = new P2Location(null, null, null);
+//		P2Trainer trainer = new P2Trainer(null, null, null, args);
+		//P2User user = new P2User("svp@revature.com", "p@$$w0rd");
 		
 		P2TestImplement tester = new P2TestImplement();
-		P2TestAnn test1 = new P2TestAnn("Next Batch Test","Fail", g.toJson(batch));
-		System.out.println(tester.insertTestData(test1));
-		System.out.println(tester.findTestDatabyId(test1.getTid()));
-		tester.update_test_data(test1.getTid(), "Pass");
-		System.out.println(tester.findTestDatabyId(test1.getTid()));	
+		//P2TestAnn test1 = new P2TestAnn("verifyLogin","Fail", g.toJson(user));
+		//System.out.println(tester.insertTestData(test1));
+		P2User t = g.fromJson(tester.findTestDatabyId(41).getTestData(), P2User.class);
+		System.out.println(t);
+		//tester.update_test_data(test1.getTid(), "Pass");
+		//System.out.println(tester.findTestDatabyId(test1.getTid()));	
 		tester.closeSession();
 	}
 
