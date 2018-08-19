@@ -32,5 +32,10 @@ public class RequestHelper {
 		System.out.println("Returning html response to frontend:");
 		return result;
 	}
+	
+	public static String readFile(String path, Charset encoding) throws IOException {
+		byte[] encoded = Files.readAllBytes(Paths.get(path));
+		return new String(encoded, encoding);
+	}
 
 }
