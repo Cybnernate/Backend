@@ -1,7 +1,7 @@
 
 
 Feature: The user can login to the site
-
+@login
 
   Scenario Outline: User logs in
     Given The user is on the login page

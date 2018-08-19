@@ -6,7 +6,7 @@
       <class name="cukes.TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="feature" invocation-numbers="4"/>
+          <include name="feature" invocation-numbers="0 1 2"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- cukes.TestRunner -->
