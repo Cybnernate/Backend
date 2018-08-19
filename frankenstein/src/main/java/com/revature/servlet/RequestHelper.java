@@ -1,5 +1,6 @@
 package com.revature.servlet;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -20,7 +21,7 @@ public class RequestHelper {
 		/////////////////////////
 		
 		System.out.println("executing NGTest command");
-		TestCommander.runTestSuite();
+		//TestCommander.runTestSuite();
 		
 		////////////////////////////
 		
@@ -31,7 +32,7 @@ public class RequestHelper {
 		
 		//assign result set as cucumber's html output!
 		try {
-			result = readFile("C:\\temp\\html\\index.html", StandardCharsets.UTF_8);
+			result = readFile("/Users/jacobgolding/Desktop/revature/project/project_2/cybernate/BackEnd/frankenstein/src/main/resources/test.txt", StandardCharsets.UTF_8);
 		} catch (IOException e) {
 			System.out.println("Exception: file not found (Servlet.RequestHelper.readFile()");
 			e.printStackTrace();
@@ -40,10 +41,10 @@ public class RequestHelper {
 		/////////////////////////////////////////////////////
 		
 		//run hibernate test
-		System.out.println("Performing database insertion:");
-		AppieTest.main(null);
+		//System.out.println("Performing database insertion:");
+		//AppieTest.main(null);
 		////////////////////////////////////////////////////////
-		System.out.println("Returning html response to frontend:");
+		//System.out.println("Returning html response to frontend:");
 		return result;
 	}
 	
