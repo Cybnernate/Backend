@@ -14,11 +14,25 @@ public class MasterServlet extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		setAccessControlHeaders(response);
 		response.getWriter().append(RequestHelper.process(request));
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		doGet(request, response);
 	}
+
+	//for Preflight
+  @Override
+  protected void doOptions(HttpServletRequest req, HttpServletResponse resp)
+          throws ServletException, IOException {
+      setAccessControlHeaders(resp);
+      resp.setStatus(HttpServletResponse.SC_OK);
+  }
+
+  private void setAccessControlHeaders(HttpServletResponse resp) {
+      resp.setHeader("Access-Control-Allow-Origin", "http://localhost:9000");
+      resp.setHeader("Access-Control-Allow-Methods", "GET");
+  }
 
 }
