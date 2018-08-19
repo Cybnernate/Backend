@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [SuiteToRunTests]">
-  <test thread-count="5" name="All Tests(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.revature.pom.Driver2">
+      <class name="cukes.TestRunner">
         <methods>
-          <include name="verifyValidLogin"/>
+          <include name="setUpClass"/>
+          <include name="feature" invocation-numbers="4"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- com.revature.pom.Driver2 -->
+      </class> <!-- cukes.TestRunner -->
     </classes>
-  </test> <!-- All Tests(failed) -->
-</suite> <!-- Failed suite [SuiteToRunTests] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
