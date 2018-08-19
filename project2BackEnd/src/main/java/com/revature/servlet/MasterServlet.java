@@ -15,7 +15,8 @@ public class MasterServlet extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		setAccessControlHeaders(response);
-		response.getWriter().append(RequestHelper.process(request));
+		PrintWriter writer = resp.getWriter();
+      		writer.write("test response from myServlet");
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
