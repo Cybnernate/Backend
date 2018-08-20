@@ -1,5 +1,6 @@
 package com.revature.servlet;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
@@ -20,7 +21,7 @@ public class RequestHelper {
 		/////////////////////////
 		
 		System.out.println("executing NGTest command");
-		TestCommander.runTestSuite();
+		//TestCommander.runTestSuite();
 		
 		////////////////////////////
 		
@@ -31,7 +32,7 @@ public class RequestHelper {
 		
 		//assign result set as cucumber's html output!
 		try {
-			result = readFile("C:\\temp\\html\\index.html", StandardCharsets.UTF_8);
+			result = readFile("test.json");
 		} catch (IOException e) {
 			System.out.println("Exception: file not found (Servlet.RequestHelper.readFile()");
 			e.printStackTrace();
@@ -40,17 +41,29 @@ public class RequestHelper {
 		/////////////////////////////////////////////////////
 		
 		//run hibernate test
-		System.out.println("Performing database insertion:");
-		AppieTest.main(null);
+		//System.out.println("Performing database insertion:");
+		//AppieTest.main(null);
 		////////////////////////////////////////////////////////
-		System.out.println("Returning html response to frontend:");
+		//System.out.println("Returning html response to frontend:");
 		return result;
 	}
 	
 	
-	public static String readFile(String path, Charset encoding) throws IOException {
-		byte[] encoded = Files.readAllBytes(Paths.get(path));
-		return new String(encoded, encoding);
+	public static String readFile(String fileName) throws IOException {
+        ClassLoader classLoader = new RequestHelper().getClass().getClassLoader();
+ 
+        File file = new File(classLoader.getResource(fileName).getFile());
+         
+        //File is found
+        System.out.println("File Found : " + file.exists());
+         
+        //Read File Content
+        String content = new String(Files.readAllBytes(file.toPath()));
+        System.out.println(content);
+		//byte[] encoded = Files.readAllBytes(Paths.get(path));
+		//System.out.println(encoded);
+		//return new String(encoded, encoding);
+		return content;
 	}
 
 }
