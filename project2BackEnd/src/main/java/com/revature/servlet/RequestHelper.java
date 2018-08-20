@@ -21,7 +21,7 @@ public class RequestHelper {
 		/////////////////////////
 		
 		System.out.println("executing NGTest command");
-		//TestCommander.runTestSuite();
+		TestCommander.runTestSuite();
 		
 		////////////////////////////
 		
@@ -41,8 +41,8 @@ public class RequestHelper {
 		/////////////////////////////////////////////////////
 		
 		//run hibernate test
-		//System.out.println("Performing database insertion:");
-		//AppieTest.main(null);
+		System.out.println("Performing database insertion:");
+		AppieTest.main(null);
 		////////////////////////////////////////////////////////
 		//System.out.println("Returning html response to frontend:");
 		return result;
