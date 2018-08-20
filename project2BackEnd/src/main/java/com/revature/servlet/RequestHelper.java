@@ -32,7 +32,7 @@ public class RequestHelper {
 		
 		//assign result set as cucumber's html output!
 		try {
-			result = readFile("test.json");
+			result = readFile("C:\\test.json");
 		} catch (IOException e) {
 			System.out.println("Exception: file not found (Servlet.RequestHelper.readFile()");
 			e.printStackTrace();
@@ -52,7 +52,8 @@ public class RequestHelper {
 	public static String readFile(String fileName) throws IOException {
         ClassLoader classLoader = new RequestHelper().getClass().getClassLoader();
  
-        File file = new File(classLoader.getResource(fileName).getFile());
+        //File file = new File(classLoader.getResource(fileName).getFile());
+		   File file = new File(filename);
          
         //File is found
         System.out.println("File Found : " + file.exists());
