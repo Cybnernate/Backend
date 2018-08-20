@@ -13,7 +13,7 @@ public class TestCommander {
 		TestListenerAdapter tla = new TestListenerAdapter();
 		TestNG testng = new TestNG();
 		ArrayList<String> tests = new ArrayList<String>();
-		tests.add("src/main/java/testingng.xml");
+		tests.add("C:\\testingng.xml");
 		testng.setTestSuites(tests);
 		testng.addListener(tla);
 		testng.run(); 
