@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.revature</groupId>
-	<artifactId>frankenstein</artifactId>
+	<artifactId>project2BackEnd</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>frankenstein Maven Webapp</name>
+	<name>project2Backend Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
@@ -93,6 +93,6 @@
 		</dependency>
 	</dependencies>
 	<build>
-		<finalName>frankenstein</finalName>
+		<finalName>project2BackEnd</finalName>
 	</build>
 </project>
