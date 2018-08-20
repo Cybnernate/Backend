@@ -42,7 +42,7 @@ public class RequestHelper {
 		
 		//run hibernate test
 		System.out.println("Performing database insertion:");
-		AppieTest.main(null);
+		//AppieTest.main(null);
 		////////////////////////////////////////////////////////
 		//System.out.println("Returning html response to frontend:");
 		return result;
