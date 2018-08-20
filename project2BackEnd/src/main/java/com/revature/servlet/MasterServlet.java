@@ -31,7 +31,7 @@ public class MasterServlet extends HttpServlet {
   }
 
   private void setAccessControlHeaders(HttpServletResponse resp) {
-      resp.setHeader("Access-Control-Allow-Origin", "http://localhost:9000");
+      resp.setHeader("Access-Control-Allow-Origin", "http://ec2-54-89-188-180.compute-1.amazonaws.com:8080");
       resp.setHeader("Access-Control-Allow-Methods", "GET");
   }
 
