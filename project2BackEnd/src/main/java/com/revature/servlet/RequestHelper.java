@@ -53,7 +53,7 @@ public class RequestHelper {
         ClassLoader classLoader = new RequestHelper().getClass().getClassLoader();
  
         //File file = new File(classLoader.getResource(fileName).getFile());
-		   File file = new File(filename);
+		   File file = new File(fileName);
          
         //File is found
         System.out.println("File Found : " + file.exists());
