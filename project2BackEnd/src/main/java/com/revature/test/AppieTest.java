@@ -35,5 +35,9 @@ public class AppieTest {
 		System.out.println(tester.findTestDatabyId(test1.getTid()));	
 		tester.closeSession();
 	}
+	
+	public static String getJSONFromDB() {
+		return g.toJson(tester.getAllTests());
+	}
 
 }
