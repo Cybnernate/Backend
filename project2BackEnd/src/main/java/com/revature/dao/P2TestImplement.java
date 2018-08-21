@@ -77,7 +77,7 @@ public class P2TestImplement implements P2TestInterface{
 		
 		try {
 			t1 = session.beginTransaction();
-			List<P2TestAnn> tests = session.createQuery("com.revature.model.P2TestAnn").list();
+			List<P2TestAnn> tests = session.createQuery("from P2TestAnn").list();
 			return tests;
 		}
 		catch(HibernateException h) {
