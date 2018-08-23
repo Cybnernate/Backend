@@ -13,7 +13,7 @@ public class AppieTest {
 	public static Gson g = new Gson();
 	public static P2TestImplement tester = new P2TestImplement();
 	
-	public static void main(String[] args) {
+//	public static void main(String[] args) {
 		
 //		
 		
@@ -35,11 +35,11 @@ public class AppieTest {
 		//System.out.println(tester.insertTestData(test1));
 //		P2User t = g.fromJson(tester.findTestDatabyId(41).getTestData(), P2User.class);
 //		System.out.println(t);
-		System.out.println(getJSONFromDB());
+//		System.out.println(getJSONFromDB());
 		//tester.update_test_data(test1.getTid(), "Pass");
 		//System.out.println(tester.findTestDatabyId(test1.getTid()));	
-		tester.closeSession();
-	}
+//		tester.closeSession();
+//	}
 	
 	public static String getJSONFromDB() {
 		return g.toJson(tester.getAllTests());
