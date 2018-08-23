@@ -13,8 +13,11 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.revature.pom.CurriculaPage;
+import com.revature.pom.LocationsPage;
 import com.revature.pom.LoginPage;
 import com.revature.pom.OverviewPage;
+import com.revature.pom.TrainerPage;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -27,35 +30,44 @@ public class GC_SD_Mercury {
 	public static Actions actions;
 	public static InputStream input;
 	public static Properties props = new Properties();
-	
-	
+
+
 	//LOGING LOGOUT CHECK*************************************
 	@Given("^the application is opened$")
 	public void the_application_is_opened() throws Throwable {
-		File chrome = new File("src\\main\\resources\\chromedriver.exe");
+		System.out.println("#####################################");
+		String current = new java.io.File( "." ).getCanonicalPath();
+        System.out.println("Current dir:"+current);
+        System.out.println("#####################################");
+
+    //For mac environmets
+		File chrome = new File("src/main/resources/chromedriver");
+		//For windows environmets
+		//File chrome = new File("src/main/resources/chromedriver.exe");
+		
 		input = new FileInputStream
-				("C:\\Users\\Brian\\Downloads\\1807-july-jta-master\\1807-july-jta-master\\automation\\examples\\cucumber\\1807_cukes\\src\\main\\resources\\test.properties");
+				("src/main/resources/test.properties");
 		props.load(input);
 		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 		driver = new ChromeDriver();
 		wait = new WebDriverWait(driver,22);
 		actions = new Actions(driver);
 		driver.get("https://assignforce-client.cfapps.io");
-		
+
 	}
 
 //	public static void launchApplication() {
-//	
+//
 //	}
-	
+
 	@When("^valid username and password are entered$")
 	public void valid_username_and_password_are_entered() throws Throwable {
 		wait.until(ExpectedConditions.elementToBeClickable(LoginPage.user(driver)));
-		
+
 		LoginPage.user(driver).sendKeys(props.getProperty("verifyLogin.username"));
-		
+
 		wait.until(ExpectedConditions.elementToBeClickable(LoginPage.pass(driver)));
-		
+
 		LoginPage.pass(driver).sendKeys(props.getProperty("verifyLogin.password"));
 	}
 
@@ -64,7 +76,7 @@ public class GC_SD_Mercury {
 	public void the_user_clicks_login_button() throws Throwable {
 
 		wait.until(ExpectedConditions.elementToBeClickable(LoginPage.submit(driver)));
-		
+
 		actions.moveToElement(LoginPage.submit(driver)).click().perform();;
 	}
 
@@ -75,12 +87,12 @@ public class GC_SD_Mercury {
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		driver.close();
 	}
-	
+
 	@Then("^the user is in AssignForce$")
 	public void the_user_is_in_AssignForce() throws Throwable {
-	    
+
 	}
-	
+
 	//Go to overview tab
 	@Given("^the user is logged in$")
 	public void the_user_is_logged_in() throws Throwable {
@@ -90,26 +102,26 @@ public class GC_SD_Mercury {
 	@When("^the user clicks on Overview tab$")
 	public void the_user_clicks_on_Overview_tab() throws Throwable {
 	    System.out.println("i'm clicking the overview tab");
-	    
+
 	    //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	    
+
 		//wait.until(ExpectedConditions.elementToBeClickable(OverviewPage.overviewTab(driver)));
 		try {
 			while(ExpectedConditions.elementToBeClickable(OverviewPage.overviewTab(driver)) == null) {
-			
+
 			}
 		}
 		catch(Exception e) {
-			
+
 		}
 		try {
 			actions.moveToElement(OverviewPage.overviewTab(driver)).click().perform();
 		}
 		catch(Exception e) {
-			
+
 		}
-			
-		
+
+
 	}
 
 	@Then("^the user goes to the overview$")
@@ -117,14 +129,14 @@ public class GC_SD_Mercury {
 		System.out.println("i'm in overview");
 	    driver.close();
 	}
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
 	//**********************************************************
-	
+
 	//EXPORT CSV************************************************
 	@Given("^the user is on the overview page$")
 	public void the_user_is_on_the_overview_page() throws Throwable {
@@ -132,17 +144,17 @@ public class GC_SD_Mercury {
 		//driver = new ChromeDriver();
 		try {
 			while (ExpectedConditions.elementToBeClickable(OverviewPage.overviewTab(driver)) == null) {
-			
+
 			}
 		}
 		catch(Exception e) {
-			
+
 		}
 		try {
 			actions.moveToElement(OverviewPage.overviewTab(driver)).click().perform();
 		}
 		catch(Exception e) {
-			
+
 		}
 	}
 
@@ -151,25 +163,312 @@ public class GC_SD_Mercury {
 		System.out.println("1");
 		try {
 		while (ExpectedConditions.elementToBeClickable(OverviewPage.exportCSVButton(driver)) == null) {
-			
+
 		}
 		}
 		catch(Exception e) {
-			
+
 		}
 		try {
 			actions.moveToElement(OverviewPage.exportCSVButton(driver)).click().perform();
 		}
 		catch(Exception e) {
-			
+
 		}
-	}	
+	}
 
 	@Then("^the document is downloaded$")
 	public void the_document_is_downloaded() throws Throwable {
 		System.out.println("1");
 		driver.close();
-	}	
-	
+	}
+
 	//**********************************************************
+
+	//Add a focus***********************************************
+	@Given("^the user is on the curricula page$")
+	public void the_user_is_on_the_curricula_page() throws Throwable {
+
+		while (ExpectedConditions.elementToBeClickable(CurriculaPage.curriculaTab(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.curriculaTab(driver)).click().perform();
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@When("^the user clicks the focus button$")
+	public void the_user_clicks_the_focus_button() throws Throwable {
+
+		while(ExpectedConditions.elementToBeClickable(CurriculaPage.addFocusButton(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.addFocusButton(driver)).click().perform();
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@When("^the user enters focus name$")
+	public void the_user_enters_focus_name() throws Throwable {
+
+		while (ExpectedConditions.elementToBeClickable(CurriculaPage.newSkillName(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.newSkillName(driver)).sendKeys(props.getProperty("addFocus.name"));
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@When("^the user clicks focus drop down$")
+	public void the_user_clicks_focus_drop_down() throws Throwable {
+
+		while (ExpectedConditions.elementToBeClickable(CurriculaPage.skillDropDown(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.skillDropDown(driver)).click().perform();
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@When("^the user clicks a focus option$")
+	public void the_user_clicks_a_focus_option() throws Throwable {
+
+		while(ExpectedConditions.elementToBeClickable(CurriculaPage.skillOption(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.skillOption(driver)).click().perform();
+		}
+		catch (Exception e) {
+
+		}
+	}
+
+	@When("^the the user clicks add focus button$")
+	public void the_the_user_clicks_add_focus_button() throws Throwable {
+		while (ExpectedConditions.elementToBeClickable(CurriculaPage.addNewFocusButton(driver)) ==  null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.addNewFocusButton(driver)).click().perform();
+		}
+		catch (Exception e) {
+
+		}
+	}
+
+	@Then("^the user has added a skill$")
+	public void the_user_has_added_a_skill() throws Throwable {
+
+
+	}
+
+	//**********************************************************
+
+	//add new skill*********************************************
+	@When("^the user clicks the skill button$")
+	public void the_user_clicks_the_skill_button() throws Throwable {
+
+		while(ExpectedConditions.elementToBeClickable(CurriculaPage.addSkillButton(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.addSkillButton(driver)).click().perform();
+		}
+		catch (Exception e) {
+
+		}
+	}
+
+	@When("^the user enters skill name$")
+	public void the_user_enters_skill_name() throws Throwable {
+
+		while (ExpectedConditions.elementToBeClickable(CurriculaPage.newSkillName(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.newSkillName(driver)).sendKeys(props.getProperty("addSkill.name"));
+		}
+		catch (Exception e) {
+
+		}
+	}
+
+	@When("^the the user clicks add new skill button$")
+	public void the_the_user_clicks_add_new_skill_button() throws Throwable {
+
+		while (ExpectedConditions.elementToBeClickable(CurriculaPage.addNewSkill(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(CurriculaPage.newSkillName(driver)).click().perform();
+		}
+		catch (Exception e ) {
+
+		}
+	}
+
+	@Then("^the user has added a focus$")
+	public void the_user_has_added_a_focus() throws Throwable {
+
+	}
+	//*********************************************************
+
+	//delete trainer*******************************************
+	@Given("^the user is on the trainer page$")
+	public void the_user_is_on_the_trainer_page() throws Throwable {
+		while(ExpectedConditions.elementToBeClickable(TrainerPage.trainerTab(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(TrainerPage.trainerTab(driver)).click().perform();
+		}
+		catch (Exception e) {
+
+		}
+	}
+
+	@When("^the user clicks the delete trainer button$")
+	public void the_user_clicks_the_delete_trainer_button() throws Throwable {
+		while(ExpectedConditions.elementToBeClickable(TrainerPage.deleteTrainer(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(TrainerPage.deleteTrainer(driver)).click().perform();
+		}
+		catch (Exception e) {
+
+		}
+	}
+
+	@Then("^the trainer is deleted$")
+	public void the_trainer_is_deleted() throws Throwable {
+
+	}
+	//**********************************************************
+
+	//download resume*******************************************
+	@When("^the user clicks the download resume button$")
+	public void the_user_clicks_the_download_resume_button() throws Throwable {
+		while(ExpectedConditions.elementToBeClickable(TrainerPage.downloadResume(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(TrainerPage.downloadResume(driver)).click().perform();
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@Then("^the resume is downloaded$")
+	public void the_resume_is_downloaded() throws Throwable {
+
+	}
+	//**********************************************************
+
+	//editCapital One*******************************************
+	@Given("^the user is on the locations page$")
+	public void the_user_is_on_the_locations_page() throws Throwable {
+		while(ExpectedConditions.elementToBeClickable(LocationsPage.locationsTab(driver)) ==null) {
+
+		}
+		try {
+			actions.moveToElement(LocationsPage.locationsTab(driver)).click().perform();
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@When("^the user clicks the edit button$")
+	public void the_user_clicks_the_edit_button() throws Throwable {
+		while(ExpectedConditions.elementToBeClickable(LocationsPage.editCapitalButton(driver)) ==null) {
+
+		}
+		try {
+			actions.moveToElement(LocationsPage.editCapitalButton(driver)).click().perform();
+		}
+		catch(Exception e) {
+
+		}
+	}
+	@When("^the user clicks the city input$")
+	public void the_user_clicks_the_city_input() throws Throwable {
+		while(ExpectedConditions.elementToBeClickable(LocationsPage.capitalCity(driver)) ==null) {
+
+		}
+		try {
+			actions.moveToElement(LocationsPage.capitalCity(driver)).sendKeys(props.getProperty("edit.city"));
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@When("^the user clicks the state input$")
+	public void the_user_clicks_the_state_input() throws Throwable {
+		while(ExpectedConditions.elementToBeClickable(LocationsPage.capitalState(driver)) ==null) {
+
+		}
+		try {
+			actions.moveToElement(LocationsPage.capitalState(driver)).sendKeys(props.getProperty("edit.state"));
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@When("^the user clicks the update capital button$")
+	public void the_user_clicks_the_update_capital_button() throws Throwable {
+		while(ExpectedConditions.elementToBeClickable(LocationsPage.capitalUpdate(driver)) ==null) {
+
+		}
+		try {
+			actions.moveToElement(LocationsPage.capitalUpdate(driver)).click().perform();
+		}
+		catch(Exception e) {
+
+		}
+	}
+
+	@Then("^capital one is updated$")
+	public void capital_one_is_updated() throws Throwable {
+
+	}
+	//**********************************************************
+
+	//reston drop down******************************************
+	@When("^the user clicks the reston drop down$")
+	public void the_user_clicks_the_reston_drop_down() throws Throwable {
+		while (ExpectedConditions.elementToBeClickable(LocationsPage.restonDropDown(driver)) == null) {
+
+		}
+		try {
+			actions.moveToElement(LocationsPage.restonDropDown(driver)).click().perform();
+		}
+		catch (Exception e) {
+
+		}
+	}
+
+	@Then("^the locations are opened$")
+	public void the_locations_are_opened() throws Throwable {
+
+	}
+	//**********************************************************
+
+
 }
