@@ -31,10 +31,16 @@ public class GC_SD_Mercury {
 	
 	//LOGING LOGOUT CHECK*************************************
 	@Given("^the application is opened$")
+	
 	public void the_application_is_opened() throws Throwable {
-		File chrome = new File("src\\main\\resources\\chromedriver.exe");
+		System.out.println("#####################################");
+		String current = new java.io.File( "." ).getCanonicalPath();
+        System.out.println("Current dir:"+current);
+        System.out.println("#####################################");
+        
+		File chrome = new File("src/main/resources/chromedriver");
 		input = new FileInputStream
-				("C:\\Users\\Brian\\Downloads\\1807-july-jta-master\\1807-july-jta-master\\automation\\examples\\cucumber\\1807_cukes\\src\\main\\resources\\test.properties");
+				("src/main/resources/test.properties");
 		props.load(input);
 		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 		driver = new ChromeDriver();

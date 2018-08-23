@@ -1,0 +1,115 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5715751053,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the application is opened",
+            "match": {
+              "location": "GC_SD_Mercury.the_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 976714541,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valid username and password are entered",
+            "match": {
+              "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128240110,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15704,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is in AssignForce",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "The user is able to download CSV document",
+        "description": "",
+        "id": "the-user-is-able-to-download-csv-document;the-user-is-able-to-download-csv-document",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35425307,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the user is on the overview page",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_on_the_overview_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 35882793,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "the user clicks the export button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_export_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 114715538,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "the document is downloaded",
+            "match": {
+              "location": "GC_SD_Mercury.the_document_is_downloaded()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "The user is able to download CSV document",
+    "description": "",
+    "id": "the-user-is-able-to-download-csv-document",
+    "keyword": "Feature",
+    "uri": "src/test/resources/exportCSV.feature"
+  }
+]
