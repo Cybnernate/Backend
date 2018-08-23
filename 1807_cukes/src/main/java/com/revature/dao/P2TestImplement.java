@@ -6,13 +6,15 @@ import com.google.gson.Gson;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
-
+import com.revature.dao.P2TestImplement;
 import com.revature.model.P2TestAnn;
 import com.revature.util.HibernateUtil;
 
 public class P2TestImplement implements P2TestInterface{
 
 	public static String getJSONFromDB() {
+		Gson g = new Gson();
+		P2TestImplement tester = new P2TestImplement();
 		return g.toJson(tester.getAllTests());
 	}
 	
