@@ -2,6 +2,7 @@ package com.revature.dao;
 
 import java.util.List;
 
+import com.google.gson.Gson;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -11,6 +12,10 @@ import com.revature.util.HibernateUtil;
 
 public class P2TestImplement implements P2TestInterface{
 
+	public static String getJSONFromDB() {
+		return g.toJson(tester.getAllTests());
+	}
+	
 	public boolean insertTestData(P2TestAnn p) {
 		Session session = HibernateUtil.getSession().openSession();
 		Transaction t1 = null;
