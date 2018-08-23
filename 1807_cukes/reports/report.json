@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4139012542,
+              "duration": 4127441055,
               "status": "passed"
             },
             "line": 7,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 1390800952,
+              "duration": 1380144782,
               "status": "passed"
             },
             "line": 8,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 166641491,
+              "duration": 180825735,
               "status": "passed"
             },
             "line": 9,
@@ -48,7 +48,7 @@
           },
           {
             "result": {
-              "duration": 78590529,
+              "duration": 118381465,
               "status": "passed"
             },
             "line": 10,
@@ -79,7 +79,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3110919808,
+              "duration": 3207462903,
               "status": "passed"
             },
             "line": 4,
@@ -91,7 +91,7 @@
           },
           {
             "result": {
-              "duration": 1464136576,
+              "duration": 1390408575,
               "status": "passed"
             },
             "line": 5,
@@ -103,7 +103,7 @@
           },
           {
             "result": {
-              "duration": 84503298,
+              "duration": 95333094,
               "status": "passed"
             },
             "line": 6,
@@ -115,7 +115,7 @@
           },
           {
             "result": {
-              "duration": 22141,
+              "duration": 23900,
               "status": "passed"
             },
             "line": 7,
@@ -128,57 +128,100 @@
         ]
       },
       {
-        "line": 9,
-        "name": "",
+        "line": 10,
+        "name": "The user is able to add a focus",
         "description": "",
-        "id": "user-can-click-the-overview-page-after-logging-in;",
+        "id": "the-user-is-able-to-add-a-focus;the-user-is-able-to-add-a-focus",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 51611,
-              "status": "passed"
+              "duration": 19546437,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#mat-tab-label-0-3\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Jacobs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1893:2f71:9671:b28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54204}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/gj/c_wj7vmx2991grvb_qk3scv40000gn/T/.org.chromium.Chromium.OZR7FV}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.106, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 4b2e209c81a45a45bf57ef79c63bb015\n*** Element info: {Using\u003dcss selector, value\u003d#mat-tab-label-0-3}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.revature.pom.CurriculaPage.curriculaTab(CurriculaPage.java:12)\n\tat com.revature.cucumberop.GC_SD_Mercury.the_user_is_on_the_curricula_page(GC_SD_Mercury.java:192)\n\tat ✽.Given the user is on the curricula page(addFocus.feature:11)\n",
+              "status": "failed"
             },
-            "line": 10,
-            "name": "the user is logged in",
+            "line": 11,
+            "name": "the user is on the curricula page",
             "match": {
-              "location": "GC_SD_Mercury.the_user_is_logged_in()"
+              "location": "GC_SD_Mercury.the_user_is_on_the_curricula_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 27685279,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 11,
-            "name": "the user clicks on Overview tab",
+            "line": 12,
+            "name": "the user clicks the focus button",
             "match": {
-              "location": "GC_SD_Mercury.the_user_clicks_on_Overview_tab()"
+              "location": "GC_SD_Mercury.the_user_clicks_the_focus_button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 81983375,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 12,
-            "name": "the user goes to the overview",
+            "line": 13,
+            "name": "the user enters focus name",
             "match": {
-              "location": "GC_SD_Mercury.the_user_goes_to_the_overview()"
+              "location": "GC_SD_Mercury.the_user_enters_focus_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "the user clicks focus drop down",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_focus_drop_down()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "the user clicks a focus option",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_a_focus_option()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "the the user clicks add focus button",
+            "match": {
+              "location": "GC_SD_Mercury.the_the_user_clicks_add_focus_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "the user has added a skill",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_has_added_a_skill()"
             },
             "keyword": "Then "
           }
         ]
       }
     ],
-    "name": "User can click the overview page after logging in",
+    "name": "The user is able to add a focus",
     "description": "",
-    "id": "user-can-click-the-overview-page-after-logging-in",
+    "id": "the-user-is-able-to-add-a-focus",
     "keyword": "Feature",
-    "uri": "clickOverview.feature"
+    "uri": "addFocus.feature"
   },
   {
     "line": 1,
@@ -192,7 +235,7 @@
         "steps": [
           {
             "result": {
-              "duration": 3081574181,
+              "duration": 3679821501,
               "status": "passed"
             },
             "line": 4,
@@ -204,8 +247,142 @@
           },
           {
             "result": {
-              "duration": 14512868,
-              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"name\",\"selector\":\"email\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Jacobs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1893:2f71:9671:b28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54073}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/gj/c_wj7vmx2991grvb_qk3scv40000gn/T/.org.chromium.Chromium.N2eZMX}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.106, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 8f445bdf190403ce0b5caf2b00e418ed\n*** Element info: {Using\u003dname, value\u003demail}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.revature.pom.LoginPage.user(LoginPage.java:12)\n\tat com.revature.cucumberop.GC_SD_Mercury.valid_username_and_password_are_entered(GC_SD_Mercury.java:59)\n\tat ✽.When valid username and password are entered(exportCSV.feature:5)\n",
+              "duration": 1455637871,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valid username and password are entered",
+            "match": {
+              "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85688416,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 18396,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is in AssignForce",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "The user is able to add a skill",
+        "description": "",
+        "id": "the-user-is-able-to-add-a-skill;the-user-is-able-to-add-a-skill",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17847813,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#mat-tab-label-0-3\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Jacobs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1893:2f71:9671:b28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54228}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/gj/c_wj7vmx2991grvb_qk3scv40000gn/T/.org.chromium.Chromium.MnGMrr}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.106, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 8593c6c61fb2196d0036c43b9ce305cd\n*** Element info: {Using\u003dcss selector, value\u003d#mat-tab-label-0-3}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.revature.pom.CurriculaPage.curriculaTab(CurriculaPage.java:12)\n\tat com.revature.cucumberop.GC_SD_Mercury.the_user_is_on_the_curricula_page(GC_SD_Mercury.java:192)\n\tat ✽.Given the user is on the curricula page(addNewSkill.feature:10)\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the user is on the curricula page",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_on_the_curricula_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user clicks the skill button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_skill_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the user enters skill name",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_enters_skill_name()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "the the user clicks add new skill button",
+            "match": {
+              "location": "GC_SD_Mercury.the_the_user_clicks_add_new_skill_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "the user has added a focus",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_has_added_a_focus()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "The user is able to add a skill",
+    "description": "",
+    "id": "the-user-is-able-to-add-a-skill",
+    "keyword": "Feature",
+    "uri": "addNewSkill.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3326259884,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the application is opened",
+            "match": {
+              "location": "GC_SD_Mercury.the_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 59363980,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"name\",\"selector\":\"email\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Jacobs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1893:2f71:9671:b28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54256}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/gj/c_wj7vmx2991grvb_qk3scv40000gn/T/.org.chromium.Chromium.GCJ9Pk}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.106, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 2e7aecaf352ad405e45d200892d654f5\n*** Element info: {Using\u003dname, value\u003demail}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.revature.pom.LoginPage.user(LoginPage.java:12)\n\tat com.revature.cucumberop.GC_SD_Mercury.valid_username_and_password_are_entered(GC_SD_Mercury.java:65)\n\tat ✽.When valid username and password are entered(clickOverview.feature:5)\n",
               "status": "failed"
             },
             "line": 5,
@@ -241,6 +418,485 @@
       },
       {
         "line": 9,
+        "name": "",
+        "description": "",
+        "id": "user-can-click-the-overview-page-after-logging-in;",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the user is logged in",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_logged_in()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user clicks on Overview tab",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_on_Overview_tab()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the user goes to the overview",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_goes_to_the_overview()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "User can click the overview page after logging in",
+    "description": "",
+    "id": "user-can-click-the-overview-page-after-logging-in",
+    "keyword": "Feature",
+    "uri": "clickOverview.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4059811013,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the application is opened",
+            "match": {
+              "location": "GC_SD_Mercury.the_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1404859911,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valid username and password are entered",
+            "match": {
+              "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 135115034,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16393,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is in AssignForce",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "The user is able to delete a trainer",
+        "description": "",
+        "id": "the-user-is-able-to-delete-a-trainer;the-user-is-able-to-delete-a-trainer",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 21749622,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#mat-tab-label-0-4\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Jacobs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1893:2f71:9671:b28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54282}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/gj/c_wj7vmx2991grvb_qk3scv40000gn/T/.org.chromium.Chromium.Bvc5n2}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.106, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: a5569bfe3cd7aabe73e0570bb8d1dd4a\n*** Element info: {Using\u003dcss selector, value\u003d#mat-tab-label-0-4}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.revature.pom.TrainerPage.trainerTab(TrainerPage.java:13)\n\tat com.revature.cucumberop.GC_SD_Mercury.the_user_is_on_the_trainer_page(GC_SD_Mercury.java:332)\n\tat ✽.Given the user is on the trainer page(deleteTrainer.feature:10)\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the user is on the trainer page",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_on_the_trainer_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user clicks the delete trainer button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_delete_trainer_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the trainer is deleted",
+            "match": {
+              "location": "GC_SD_Mercury.the_trainer_is_deleted()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "The user is able to delete a trainer",
+    "description": "",
+    "id": "the-user-is-able-to-delete-a-trainer",
+    "keyword": "Feature",
+    "uri": "deleteTrainer.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3525784649,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the application is opened",
+            "match": {
+              "location": "GC_SD_Mercury.the_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1422068581,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valid username and password are entered",
+            "match": {
+              "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 82511748,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13789,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is in AssignForce",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "The user is able to download trainer resume",
+        "description": "",
+        "id": "the-user-is-able-to-download-trainer-resume;the-user-is-able-to-download-trainer-resume",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15012572,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#mat-tab-label-0-4\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Jacobs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1893:2f71:9671:b28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54308}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/gj/c_wj7vmx2991grvb_qk3scv40000gn/T/.org.chromium.Chromium.e0nftv}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.106, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 9cc075c8a2cba2e1ee877f410d6e516e\n*** Element info: {Using\u003dcss selector, value\u003d#mat-tab-label-0-4}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.revature.pom.TrainerPage.trainerTab(TrainerPage.java:13)\n\tat com.revature.cucumberop.GC_SD_Mercury.the_user_is_on_the_trainer_page(GC_SD_Mercury.java:332)\n\tat ✽.Given the user is on the trainer page(downloadResume.feature:10)\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the user is on the trainer page",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_on_the_trainer_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user clicks the download resume button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_download_resume_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the resume is downloaded",
+            "match": {
+              "location": "GC_SD_Mercury.the_resume_is_downloaded()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "The user is able to download trainer resume",
+    "description": "",
+    "id": "the-user-is-able-to-download-trainer-resume",
+    "keyword": "Feature",
+    "uri": "downloadResume.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3547520389,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the application is opened",
+            "match": {
+              "location": "GC_SD_Mercury.the_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1512280202,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valid username and password are entered",
+            "match": {
+              "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 104438214,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16687,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is in AssignForce",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "The user is able to edit Capital One",
+        "description": "",
+        "id": "the-user-is-able-to-edit-capital-one;the-user-is-able-to-edit-capital-one",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 16760592,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#mat-tab-label-0-2\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Jacobs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1893:2f71:9671:b28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54332}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/gj/c_wj7vmx2991grvb_qk3scv40000gn/T/.org.chromium.Chromium.qsZLQ3}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.106, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 08682de40fdd26ac6d0005d52017d4de\n*** Element info: {Using\u003dcss selector, value\u003d#mat-tab-label-0-2}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:510)\n\tat org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.revature.pom.LocationsPage.locationsTab(LocationsPage.java:12)\n\tat com.revature.cucumberop.GC_SD_Mercury.the_user_is_on_the_locations_page(GC_SD_Mercury.java:385)\n\tat ✽.Given the user is on the locations page(editCapital.feature:10)\n",
+              "status": "failed"
+            },
+            "line": 10,
+            "name": "the user is on the locations page",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_on_the_locations_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user clicks the edit button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_edit_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the user clicks the city input",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_city_input()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "the user clicks the state input",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_state_input()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "the user clicks the update capital button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_update_capital_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "capital one is updated",
+            "match": {
+              "location": "GC_SD_Mercury.capital_one_is_updated()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "The user is able to edit Capital One",
+    "description": "",
+    "id": "the-user-is-able-to-edit-capital-one",
+    "keyword": "Feature",
+    "uri": "editCapital.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3528347788,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the application is opened",
+            "match": {
+              "location": "GC_SD_Mercury.the_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1393627043,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "valid username and password are entered",
+            "match": {
+              "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 98853689,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15880,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user is in AssignForce",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
         "name": "The user is able to download CSV document",
         "description": "",
         "id": "the-user-is-able-to-download-csv-document;the-user-is-able-to-download-csv-document",
@@ -249,7 +905,8 @@
         "steps": [
           {
             "result": {
-              "status": "skipped"
+              "duration": 26375127,
+              "status": "passed"
             },
             "line": 10,
             "name": "the user is on the overview page",
@@ -260,7 +917,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 18818655,
+              "status": "passed"
             },
             "line": 11,
             "name": "the user clicks the export button",
@@ -271,7 +929,8 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 71454265,
+              "status": "passed"
             },
             "line": 12,
             "name": "the document is downloaded",
@@ -288,5 +947,114 @@
     "id": "the-user-is-able-to-download-csv-document",
     "keyword": "Feature",
     "uri": "exportCSV.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3090486955,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the application is opened",
+            "match": {
+              "location": "GC_SD_Mercury.the_application_is_opened()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15517777,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"name\",\"selector\":\"email\"}\n  (Session info: chrome\u003d68.0.3440.106)\n  (Driver info: chromedriver\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db),platform\u003dMac OS X 10.13.6 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027Jacobs-MacBook-Pro.local\u0027, ip: \u0027fe80:0:0:0:1893:2f71:9671:b28%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_171\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dMAC, acceptSslCerts\u003dfalse, goog:chromeOptions\u003d{debuggerAddress\u003dlocalhost:54387}, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dMAC, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.41.578706 (5f725d1b4f0a4acbf5259df887244095596231db), userDataDir\u003d/var/folders/gj/c_wj7vmx2991grvb_qk3scv40000gn/T/.org.chromium.Chromium.CiWZ1B}, takesHeapSnapshot\u003dtrue, unhandledPromptBehavior\u003d, pageLoadStrategy\u003dnormal, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d68.0.3440.106, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: c42cab2b7db22559e2b728895357a696\n*** Element info: {Using\u003dname, value\u003demail}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:494)\n\tat org.openqa.selenium.By$ByName.findElement(By.java:303)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\n\tat com.revature.pom.LoginPage.user(LoginPage.java:12)\n\tat com.revature.cucumberop.GC_SD_Mercury.valid_username_and_password_are_entered(GC_SD_Mercury.java:65)\n\tat ✽.When valid username and password are entered(restonDropDown.feature:5)\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "valid username and password are entered",
+            "match": {
+              "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "the user clicks login button",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "the user is in AssignForce",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "The user is able to use drop down",
+        "description": "",
+        "id": "the-user-is-able-to-use-drop-down;the-user-is-able-to-use-drop-down",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "the user is on the locations page",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_is_on_the_locations_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "the user clicks the reston drop down",
+            "match": {
+              "location": "GC_SD_Mercury.the_user_clicks_the_reston_drop_down()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "the locations are opened",
+            "match": {
+              "location": "GC_SD_Mercury.the_locations_are_opened()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "The user is able to use drop down",
+    "description": "",
+    "id": "the-user-is-able-to-use-drop-down",
+    "keyword": "Feature",
+    "uri": "restonDropDown.feature"
   }
 ]
