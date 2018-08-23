@@ -185,17 +185,20 @@ public class GC_SD_Mercury {
 
 	//**********************************************************
 
-	//Add a focus***********************************************
+	// Add a focus***********************************************
 	@Given("^the user is on the curricula page$")
 	public void the_user_is_on_the_curricula_page() throws Throwable {
 
-		while (ExpectedConditions.elementToBeClickable(CurriculaPage.curriculaTab(driver)) == null) {
+		try {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.curriculaTab(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.curriculaTab(driver)).click().perform();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
@@ -203,68 +206,82 @@ public class GC_SD_Mercury {
 	@When("^the user clicks the focus button$")
 	public void the_user_clicks_the_focus_button() throws Throwable {
 
-		while(ExpectedConditions.elementToBeClickable(CurriculaPage.addFocusButton(driver)) == null) {
+		try {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.addFocusButton(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.addFocusButton(driver)).click().perform();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the user enters focus name$")
 	public void the_user_enters_focus_name() throws Throwable {
+		try {
 
-		while (ExpectedConditions.elementToBeClickable(CurriculaPage.newSkillName(driver)) == null) {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.newSkillName(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.newSkillName(driver)).sendKeys(props.getProperty("addFocus.name"));
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the user clicks focus drop down$")
 	public void the_user_clicks_focus_drop_down() throws Throwable {
+		try {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.skillDropDown(driver)) == null) {
 
-		while (ExpectedConditions.elementToBeClickable(CurriculaPage.skillDropDown(driver)) == null) {
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.skillDropDown(driver)).click().perform();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the user clicks a focus option$")
 	public void the_user_clicks_a_focus_option() throws Throwable {
+		try {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.skillOption(driver)) == null) {
 
-		while(ExpectedConditions.elementToBeClickable(CurriculaPage.skillOption(driver)) == null) {
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.skillOption(driver)).click().perform();
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the the user clicks add focus button$")
 	public void the_the_user_clicks_add_focus_button() throws Throwable {
-		while (ExpectedConditions.elementToBeClickable(CurriculaPage.addNewFocusButton(driver)) ==  null) {
+
+		try {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.addNewFocusButton(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.addNewFocusButton(driver)).click().perform();
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
@@ -272,50 +289,55 @@ public class GC_SD_Mercury {
 	@Then("^the user has added a skill$")
 	public void the_user_has_added_a_skill() throws Throwable {
 
-
 	}
 
-	//**********************************************************
+	// **********************************************************
 
-	//add new skill*********************************************
+	// add new skill*********************************************
 	@When("^the user clicks the skill button$")
 	public void the_user_clicks_the_skill_button() throws Throwable {
+		try {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.addSkillButton(driver)) == null) {
 
-		while(ExpectedConditions.elementToBeClickable(CurriculaPage.addSkillButton(driver)) == null) {
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.addSkillButton(driver)).click().perform();
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the user enters skill name$")
 	public void the_user_enters_skill_name() throws Throwable {
+		try {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.newSkillName(driver)) == null) {
 
-		while (ExpectedConditions.elementToBeClickable(CurriculaPage.newSkillName(driver)) == null) {
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.newSkillName(driver)).sendKeys(props.getProperty("addSkill.name"));
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the the user clicks add new skill button$")
 	public void the_the_user_clicks_add_new_skill_button() throws Throwable {
+		try {
+			while (ExpectedConditions.elementToBeClickable(CurriculaPage.addNewSkill(driver)) == null) {
 
-		while (ExpectedConditions.elementToBeClickable(CurriculaPage.addNewSkill(driver)) == null) {
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(CurriculaPage.newSkillName(driver)).click().perform();
-		}
-		catch (Exception e ) {
+		} catch (Exception e) {
 
 		}
 	}
@@ -324,31 +346,39 @@ public class GC_SD_Mercury {
 	public void the_user_has_added_a_focus() throws Throwable {
 
 	}
-	//*********************************************************
+	// *********************************************************
 
-	//delete trainer*******************************************
+	// delete trainer*******************************************
 	@Given("^the user is on the trainer page$")
 	public void the_user_is_on_the_trainer_page() throws Throwable {
-		while(ExpectedConditions.elementToBeClickable(TrainerPage.trainerTab(driver)) == null) {
+
+		try {
+			while (ExpectedConditions.elementToBeClickable(TrainerPage.trainerTab(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(TrainerPage.trainerTab(driver)).click().perform();
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the user clicks the delete trainer button$")
 	public void the_user_clicks_the_delete_trainer_button() throws Throwable {
-		while(ExpectedConditions.elementToBeClickable(TrainerPage.deleteTrainer(driver)) == null) {
+
+		try {
+			while (ExpectedConditions.elementToBeClickable(TrainerPage.deleteTrainer(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(TrainerPage.deleteTrainer(driver)).click().perform();
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
@@ -357,18 +387,22 @@ public class GC_SD_Mercury {
 	public void the_trainer_is_deleted() throws Throwable {
 
 	}
-	//**********************************************************
+	// **********************************************************
 
-	//download resume*******************************************
+	// download resume*******************************************
 	@When("^the user clicks the download resume button$")
 	public void the_user_clicks_the_download_resume_button() throws Throwable {
-		while(ExpectedConditions.elementToBeClickable(TrainerPage.downloadResume(driver)) == null) {
+
+		try {
+			while (ExpectedConditions.elementToBeClickable(TrainerPage.downloadResume(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(TrainerPage.downloadResume(driver)).click().perform();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
@@ -377,69 +411,86 @@ public class GC_SD_Mercury {
 	public void the_resume_is_downloaded() throws Throwable {
 
 	}
-	//**********************************************************
+	// **********************************************************
 
-	//editCapital One*******************************************
+	// editCapital One*******************************************
 	@Given("^the user is on the locations page$")
 	public void the_user_is_on_the_locations_page() throws Throwable {
-		while(ExpectedConditions.elementToBeClickable(LocationsPage.locationsTab(driver)) ==null) {
+		try {
+			while (ExpectedConditions.elementToBeClickable(LocationsPage.locationsTab(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(LocationsPage.locationsTab(driver)).click().perform();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the user clicks the edit button$")
 	public void the_user_clicks_the_edit_button() throws Throwable {
-		while(ExpectedConditions.elementToBeClickable(LocationsPage.editCapitalButton(driver)) ==null) {
+
+		try {
+			while (ExpectedConditions.elementToBeClickable(LocationsPage.editCapitalButton(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(LocationsPage.editCapitalButton(driver)).click().perform();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
+
 	@When("^the user clicks the city input$")
 	public void the_user_clicks_the_city_input() throws Throwable {
-		while(ExpectedConditions.elementToBeClickable(LocationsPage.capitalCity(driver)) ==null) {
+		try {
+			while (ExpectedConditions.elementToBeClickable(LocationsPage.capitalCity(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(LocationsPage.capitalCity(driver)).sendKeys(props.getProperty("edit.city"));
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the user clicks the state input$")
 	public void the_user_clicks_the_state_input() throws Throwable {
-		while(ExpectedConditions.elementToBeClickable(LocationsPage.capitalState(driver)) ==null) {
+		try {
+			while (ExpectedConditions.elementToBeClickable(LocationsPage.capitalState(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(LocationsPage.capitalState(driver)).sendKeys(props.getProperty("edit.state"));
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
 
 	@When("^the user clicks the update capital button$")
 	public void the_user_clicks_the_update_capital_button() throws Throwable {
-		while(ExpectedConditions.elementToBeClickable(LocationsPage.capitalUpdate(driver)) ==null) {
+		try {
+			while (ExpectedConditions.elementToBeClickable(LocationsPage.capitalUpdate(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(LocationsPage.capitalUpdate(driver)).click().perform();
-		}
-		catch(Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
@@ -448,18 +499,21 @@ public class GC_SD_Mercury {
 	public void capital_one_is_updated() throws Throwable {
 
 	}
-	//**********************************************************
+	// **********************************************************
 
-	//reston drop down******************************************
+	// reston drop down******************************************
 	@When("^the user clicks the reston drop down$")
 	public void the_user_clicks_the_reston_drop_down() throws Throwable {
-		while (ExpectedConditions.elementToBeClickable(LocationsPage.restonDropDown(driver)) == null) {
+		try {
+			while (ExpectedConditions.elementToBeClickable(LocationsPage.restonDropDown(driver)) == null) {
+
+			}
+		} catch (Exception e) {
 
 		}
 		try {
 			actions.moveToElement(LocationsPage.restonDropDown(driver)).click().perform();
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 
 		}
 	}
