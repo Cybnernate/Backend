@@ -23,7 +23,7 @@ public class RequestHelper {
 
 		try {
 			//CHANGE THIS PATH!!!!
-			result = readFile("C:\\test-output\emailable-report.html");
+			result = readFile("C:\\TestOutput\emailable-report.html");
 			//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 		} catch (IOException e) {
 			System.out.println("Exception: file not found (Servlet.RequestHelper.readFile()");
