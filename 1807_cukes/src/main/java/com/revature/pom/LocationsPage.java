@@ -1,40 +1,50 @@
 package com.revature.pom;
 
+import static org.testng.Assert.expectThrows;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LocationsPage {
 
 	private static WebElement element;
 
 	public static WebElement locationsTab(WebDriver driver) {
-		element = driver.findElement(By.cssSelector("#mat-tab-label-0-2"));
+		WebDriverWait wait = new WebDriverWait(driver,15);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-tab-label-0-2\"]")));
 		return element;
 	}
 
 	public static WebElement editCapitalButton (WebDriver driver) {
-		element = driver.findElement(By.cssSelector("#mat-expansion-panel-header-30 > span.mat-content > mat-panel-description > mat-icon:nth-child(4)"));
+		WebDriverWait wait = new WebDriverWait(driver,15);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-expansion-panel-header-9\"]/span[1]/mat-panel-description/mat-icon[3]")));
 		return element;
 	}
 
 	public static WebElement capitalCity (WebDriver driver) {
-		element = driver.findElement(By.cssSelector("#mat-input-12"));
+		WebDriverWait wait = new WebDriverWait(driver,15);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-input-1\"]")));
 		return element;
 	}
 
 	public static WebElement capitalState (WebDriver driver) {
-		element = driver.findElement(By.cssSelector("#mat-input-13"));
+		WebDriverWait wait = new WebDriverWait(driver,15);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-input-2\"]")));
 		return element;
 	}
 
 	public static WebElement capitalUpdate (WebDriver driver) {
-		element = driver.findElement(By.cssSelector("#mat-dialog-1 > app-location-edit-location-dialog > div.mat-dialog-actions > button:nth-child(1)"));
+		WebDriverWait wait = new WebDriverWait(driver,15);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-dialog-0\"]/app-location-edit-location-dialog/div[2]/button[1]/span")));
 		return element;
 	}
 
 	public static WebElement restonDropDown (WebDriver driver) {
-		element = driver.findElement(By.cssSelector("#mat-expansion-panel-header-23 > span.mat-expansion-indicator.ng-tns-c20-102.ng-trigger.ng-trigger-indicatorRotate.ng-star-inserted"));
+		WebDriverWait wait = new WebDriverWait(driver,15);
+		element = wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[@id=\"mat-expansion-panel-header-2\"]/span[2]")));
 		return element;
 	}
 }
