@@ -48,7 +48,7 @@ public class GC_SD_Mercury {
 		File chrome = new File("src/main/resources/chromedriver.exe");
 		
 		input = new FileInputStream
-				("src/main/resources/test.properties");
+				("C:\\Users\\Administrator\\.jenkins\\jobs\\Backend\\workspace\\1807_cukes\\src\\main\\resources\\test.properties");
 		props.load(input);
 		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 		driver = new ChromeDriver();
