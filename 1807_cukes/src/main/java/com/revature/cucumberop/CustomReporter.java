@@ -35,7 +35,7 @@ public class CustomReporter implements IReporter{
        
         System.out.println("#####################################");
 		
-		saveReportTemplate(outputDirectory, reportTemplate.replaceFirst("</tbody>", String.format("%s</tbody>", body)));
+		saveReportTemplate("C:\\TestOutput\emailable-report.html", reportTemplate.replaceFirst("</tbody>", String.format("%s</tbody>", body)));
 		
 		
 	}
