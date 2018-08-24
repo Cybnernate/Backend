@@ -45,7 +45,7 @@ public class GC_SD_Mercury {
         //For mac environmets
 		//File chrome = new File("src/main/resources/chromedriver");
 		//For windows environmets
-		File chrome = new File("src/main/resources/chromedriver.exe");
+		File chrome = new File("C:\\Users\\Administrator\\.jenkins\\jobs\\Backend\\workspace\\1807_cukes\\src\\main\\resources\\chromedriver.exe");
 		
 		input = new FileInputStream
 				("C:\\Users\\Administrator\\.jenkins\\jobs\\Backend\\workspace\\1807_cukes\\src\\main\\resources\\test.properties");
