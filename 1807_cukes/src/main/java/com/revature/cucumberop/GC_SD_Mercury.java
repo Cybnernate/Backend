@@ -72,7 +72,7 @@ public class GC_SD_Mercury {
 		currTest = new P2TestAnn("verifyLogin", "Fail", null);
 		tester.insertTestData(currTest);
 		//wait.until(ExpectedConditions.elementToBeClickable(LoginPage.user(driver)));
-		driver.manage().timeouts().implicitlywait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		LoginPage.user(driver).sendKeys(props.getProperty("verifyLogin.username"));
 
 		//wait.until(ExpectedConditions.elementToBeClickable(LoginPage.pass(driver)));
