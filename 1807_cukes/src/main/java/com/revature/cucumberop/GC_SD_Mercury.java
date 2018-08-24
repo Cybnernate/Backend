@@ -42,10 +42,10 @@ public class GC_SD_Mercury {
         System.out.println("Current dir:"+current);
         System.out.println("#####################################");
 
-    //For mac environmets
-		File chrome = new File("src/main/resources/chromedriver");
+        //For mac environmets
+		//File chrome = new File("src/main/resources/chromedriver");
 		//For windows environmets
-		//File chrome = new File("src/main/resources/chromedriver.exe");
+		File chrome = new File("src/main/resources/chromedriver.exe");
 		
 		input = new FileInputStream
 				("src/main/resources/test.properties");
