@@ -49,10 +49,10 @@ public class GC_SD_Mercury {
         //For mac environmets
 		//File chrome = new File("src/main/resources/chromedriver");
 		//For windows environmets
-		File chrome = new File("src/main/resources/chromedriver.exe");
+		File chrome = new File("C:\\Users\\Administrator\\Desktop\\chromedriver.exe");
 		
 		input = new FileInputStream
-				("src/main/resources/test.properties");
+				("C:\\Users\\Administrator\\Desktop\\test.properties");
 		props.load(input);
 		System.setProperty("webdriver.chrome.driver", chrome.getAbsolutePath());
 		driver = new ChromeDriver();
