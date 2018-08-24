@@ -71,12 +71,12 @@ public class GC_SD_Mercury {
 	public void valid_username_and_password_are_entered() throws Throwable {
 		currTest = new P2TestAnn("verifyLogin", "Fail", null);
 		tester.insertTestData(currTest);
-		wait.until(ExpectedConditions.elementToBeClickable(LoginPage.user(driver)));
-
+		//wait.until(ExpectedConditions.elementToBeClickable(LoginPage.user(driver)));
+		driver.manage().timeouts().implicitlywait(15, TimeUnit.SECONDS);
 		LoginPage.user(driver).sendKeys(props.getProperty("verifyLogin.username"));
 
-		wait.until(ExpectedConditions.elementToBeClickable(LoginPage.pass(driver)));
-
+		//wait.until(ExpectedConditions.elementToBeClickable(LoginPage.pass(driver)));
+		driver.manage().timeouts().implicitlywait(15, TimeUnit.SECONDS);
 		LoginPage.pass(driver).sendKeys(props.getProperty("verifyLogin.password"));
 	}
 
@@ -84,8 +84,8 @@ public class GC_SD_Mercury {
 	@When("^the user clicks login button$")
 	public void the_user_clicks_login_button() throws Throwable {
 
-		wait.until(ExpectedConditions.elementToBeClickable(LoginPage.submit(driver)));
-
+		//wait.until(ExpectedConditions.elementToBeClickable(LoginPage.submit(driver)));
+		driver.manage().timeouts().implicitlywait(15, TimeUnit.SECONDS); 
 		actions.moveToElement(LoginPage.submit(driver)).click().perform();;
 	}
 
