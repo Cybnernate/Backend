@@ -23,6 +23,17 @@ public class CustomReporter implements IReporter{
 		String reportTemplate = initReportTemplate();
 		
 		final String body = suites.stream().flatMap(suiteToResults()).collect(Collectors.joining());
+		System.out.println("#####################################");
+		String current;
+		try {
+			current = new java.io.File( "." ).getCanonicalPath();
+			System.out.println("Current dir:"+current);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+       
+        System.out.println("#####################################");
 		
 		saveReportTemplate(outputDirectory, reportTemplate.replaceFirst("</tbody>", String.format("%s</tbody>", body)));
 		

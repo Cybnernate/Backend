@@ -13,27 +13,17 @@ import com.revature.cucumberop.TestCommander;
 import com.revature.test.AppieTest;
 
 public class RequestHelper {
-	
 
-	public static String process(HttpServletRequest request) {
-		System.out.println("request processing:");
-		
-		/////////////////////////
-		
-		System.out.println("executing NGTest command");
-		//TestCommander.runTestSuite();
-		
-		////////////////////////////
-		
-		
-		////////////////////////////
-		System.out.println("Reading NGResults html from filesystem:");
+
+	public static String process(HttpServletRequest request) throws IOException {
+
+		TestCommander.runTestSuite();
+
 		String result = "Error: servlet unable to read test results file";
-		
-		//assign result set as cucumber's html output!
+
 		try {
 			//CHANGE THIS PATH!!!!
-			result = readFile("C:\\test.json");
+			result = readFile("test-output/emailable-report.html");
 			//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 		} catch (IOException e) {
 			System.out.println("Exception: file not found (Servlet.RequestHelper.readFile()");
@@ -41,25 +31,26 @@ public class RequestHelper {
 			System.out.println("End of Exception: file not found (Servlet.RequestHelper.readFile()");
 		}
 		/////////////////////////////////////////////////////
-		
+
 		//run hibernate test
 		//System.out.println("Performing database insertion:");
 		//AppieTest.main(null);
 		////////////////////////////////////////////////////////
 		//System.out.println("Returning html response to frontend:");
+		System.out.println(result);
 		return result;
 	}
-	
-	
+
+
 	public static String readFile(String fileName) throws IOException {
         ClassLoader classLoader = new RequestHelper().getClass().getClassLoader();
- 
+
         //File file = new File(classLoader.getResource(fileName).getFile());
 		   File file = new File(fileName);
-         
+
         //File is found
         System.out.println("File Found : " + file.exists());
-         
+
         //Read File Content
         String content = new String(Files.readAllBytes(file.toPath()));
         System.out.println(content);
