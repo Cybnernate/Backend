@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="SuiteToRunTests" duration-ms="45386" started-at="2018-08-23T18:17:08Z" finished-at="2018-08-23T18:17:54Z">
+  <suite name="SuiteToRunTests" duration-ms="74740" started-at="2018-08-24T01:27:23Z" finished-at="2018-08-24T01:28:37Z">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="All Tests" duration-ms="45386" started-at="2018-08-23T18:17:08Z" finished-at="2018-08-23T18:17:54Z">
+    <test name="All Tests" duration-ms="74740" started-at="2018-08-24T01:27:23Z" finished-at="2018-08-24T01:28:37Z">
       <class name="com.revature.cucumberop.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="setUpClass" is-config="true" duration-ms="170" started-at="2018-08-23T14:17:08Z" finished-at="2018-08-23T14:17:09Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="setUpClass" is-config="true" duration-ms="146" started-at="2018-08-23T21:27:23Z" finished-at="2018-08-23T21:27:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="5721" started-at="2018-08-23T14:17:09Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:14Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="4417" started-at="2018-08-23T21:27:23Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:27:27Z">
           <params>
             <param index="0">
               <value>
@@ -25,7 +25,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="4880" started-at="2018-08-23T14:17:14Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:19Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="10321" started-at="2018-08-23T21:27:27Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:27:37Z">
           <params>
             <param index="0">
               <value>
@@ -36,7 +36,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="4770" started-at="2018-08-23T14:17:19Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:24Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="8458" started-at="2018-08-23T21:27:37Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:27:46Z">
           <params>
             <param index="0">
               <value>
@@ -47,7 +47,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="5048" started-at="2018-08-23T14:17:24Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:29Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="5736" started-at="2018-08-23T21:27:46Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:27:52Z">
           <params>
             <param index="0">
               <value>
@@ -58,7 +58,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="4727" started-at="2018-08-23T14:17:29Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:34Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="20932" started-at="2018-08-23T21:27:52Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:28:13Z">
           <params>
             <param index="0">
               <value>
@@ -69,7 +69,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="5014" started-at="2018-08-23T14:17:34Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:39Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="6037" started-at="2018-08-23T21:28:13Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:28:19Z">
           <params>
             <param index="0">
               <value>
@@ -80,7 +80,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="4927" started-at="2018-08-23T14:17:39Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:44Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="6287" started-at="2018-08-23T21:28:19Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:28:25Z">
           <params>
             <param index="0">
               <value>
@@ -91,7 +91,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="5064" started-at="2018-08-23T14:17:44Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:49Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="5962" started-at="2018-08-23T21:28:25Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:28:31Z">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="4967" started-at="2018-08-23T14:17:49Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T14:17:54Z">
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="feature" duration-ms="6351" started-at="2018-08-23T21:28:31Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2018-08-23T21:28:37Z">
           <params>
             <param index="0">
               <value>
@@ -113,7 +113,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="tearDownClass" is-config="true" duration-ms="15" started-at="2018-08-23T14:17:54Z" finished-at="2018-08-23T14:17:54Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.revature.cucumberop.TestRunner@553f17c]" name="tearDownClass" is-config="true" duration-ms="20" started-at="2018-08-23T21:28:37Z" finished-at="2018-08-23T21:28:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

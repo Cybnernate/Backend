@@ -38,28 +38,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 4077258776,
+  "duration": 2471201897,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1421320540,
+  "duration": 1811204480,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 118572419,
+  "duration": 109917445,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.user_should_be_able_to_gain_access_to_the_application()"
 });
 formatter.result({
-  "duration": 80654289,
+  "duration": 15952,
   "status": "passed"
 });
 formatter.uri("addFocus.feature");
@@ -101,28 +101,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 3172726476,
+  "duration": 1644669685,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1394798254,
+  "duration": 2597732748,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 96087748,
+  "duration": 105002346,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
 });
 formatter.result({
-  "duration": 23058,
+  "duration": 28280,
   "status": "passed"
 });
 formatter.scenario({
@@ -172,49 +172,49 @@ formatter.match({
   "location": "GC_SD_Mercury.the_user_is_on_the_curricula_page()"
 });
 formatter.result({
-  "duration": 30539835,
+  "duration": 5023571630,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_focus_button()"
 });
 formatter.result({
-  "duration": 25594316,
+  "duration": 262006643,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_enters_focus_name()"
 });
 formatter.result({
-  "duration": 60884021,
+  "duration": 76905089,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_focus_drop_down()"
 });
 formatter.result({
-  "duration": 33509417,
+  "duration": 192928742,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_a_focus_option()"
 });
 formatter.result({
-  "duration": 21848818,
+  "duration": 218344620,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_the_user_clicks_add_focus_button()"
 });
 formatter.result({
-  "duration": 20051264,
+  "duration": 94470139,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_has_added_a_skill()"
 });
 formatter.result({
-  "duration": 17873,
+  "duration": 86618567,
   "status": "passed"
 });
 formatter.uri("addNewSkill.feature");
@@ -256,28 +256,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 3124969538,
+  "duration": 1633264646,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1437925137,
+  "duration": 1793377696,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 95641812,
+  "duration": 82764518,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
 });
 formatter.result({
-  "duration": 17125,
+  "duration": 15561,
   "status": "passed"
 });
 formatter.scenario({
@@ -317,35 +317,35 @@ formatter.match({
   "location": "GC_SD_Mercury.the_user_is_on_the_curricula_page()"
 });
 formatter.result({
-  "duration": 29465852,
+  "duration": 4267329685,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_skill_button()"
 });
 formatter.result({
-  "duration": 21587152,
+  "duration": 317580607,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_enters_skill_name()"
 });
 formatter.result({
-  "duration": 21523626,
+  "duration": 49504491,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_the_user_clicks_add_new_skill_button()"
 });
 formatter.result({
-  "duration": 26773906,
+  "duration": 217337851,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_has_added_a_focus()"
 });
 formatter.result({
-  "duration": 20300,
+  "duration": 86864164,
   "status": "passed"
 });
 formatter.uri("clickOverview.feature");
@@ -387,28 +387,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 3396127050,
+  "duration": 1531630568,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1412717014,
+  "duration": 1820722912,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 91338080,
+  "duration": 78684984,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
 });
 formatter.result({
-  "duration": 12552,
+  "duration": 11439,
   "status": "passed"
 });
 formatter.scenario({
@@ -438,21 +438,21 @@ formatter.match({
   "location": "GC_SD_Mercury.the_user_is_logged_in()"
 });
 formatter.result({
-  "duration": 48574,
+  "duration": 44916,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_on_Overview_tab()"
 });
 formatter.result({
-  "duration": 31486428,
+  "duration": 2188480694,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_goes_to_the_overview()"
 });
 formatter.result({
-  "duration": 105563388,
+  "duration": 106980033,
   "status": "passed"
 });
 formatter.uri("deleteTrainer.feature");
@@ -494,28 +494,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 3185032578,
+  "duration": 1658889490,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1385161905,
+  "duration": 1904578626,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 97584074,
+  "duration": 86317642,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
 });
 formatter.result({
-  "duration": 12244,
+  "duration": 11386,
   "status": "passed"
 });
 formatter.scenario({
@@ -545,21 +545,21 @@ formatter.match({
   "location": "GC_SD_Mercury.the_user_is_on_the_trainer_page()"
 });
 formatter.result({
-  "duration": 27356645,
+  "duration": 1714806983,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_delete_trainer_button()"
 });
 formatter.result({
-  "duration": 19582944,
+  "duration": 15469605344,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_trainer_is_deleted()"
 });
 formatter.result({
-  "duration": 17206,
+  "duration": 90120141,
   "status": "passed"
 });
 formatter.uri("downloadResume.feature");
@@ -601,28 +601,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 3420949006,
+  "duration": 1533551064,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1433655840,
+  "duration": 1890803961,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 108629307,
+  "duration": 88310918,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
 });
 formatter.result({
-  "duration": 16166,
+  "duration": 15584,
   "status": "passed"
 });
 formatter.scenario({
@@ -652,21 +652,21 @@ formatter.match({
   "location": "GC_SD_Mercury.the_user_is_on_the_trainer_page()"
 });
 formatter.result({
-  "duration": 21933298,
+  "duration": 1696995546,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_download_resume_button()"
 });
 formatter.result({
-  "duration": 19266373,
+  "duration": 734813598,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_resume_is_downloaded()"
 });
 formatter.result({
-  "duration": 17017,
+  "duration": 82503343,
   "status": "passed"
 });
 formatter.uri("editCapital.feature");
@@ -708,28 +708,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 3328711933,
+  "duration": 1559475542,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1403386958,
+  "duration": 1834730295,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 76069975,
+  "duration": 76964803,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
 });
 formatter.result({
-  "duration": 12792,
+  "duration": 12625,
   "status": "passed"
 });
 formatter.scenario({
@@ -774,42 +774,42 @@ formatter.match({
   "location": "GC_SD_Mercury.the_user_is_on_the_locations_page()"
 });
 formatter.result({
-  "duration": 23289825,
+  "duration": 1721746224,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_edit_button()"
 });
 formatter.result({
-  "duration": 19072263,
+  "duration": 665512833,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_city_input()"
 });
 formatter.result({
-  "duration": 20060440,
+  "duration": 39460733,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_state_input()"
 });
 formatter.result({
-  "duration": 22812205,
+  "duration": 33270618,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_update_capital_button()"
 });
 formatter.result({
-  "duration": 23555714,
+  "duration": 263181218,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.capital_one_is_updated()"
 });
 formatter.result({
-  "duration": 19068,
+  "duration": 83313248,
   "status": "passed"
 });
 formatter.uri("exportCSV.feature");
@@ -851,28 +851,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 3399853856,
+  "duration": 1835967051,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1410281185,
+  "duration": 1809694976,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 87113518,
+  "duration": 81059301,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
 });
 formatter.result({
-  "duration": 15195,
+  "duration": 18308,
   "status": "passed"
 });
 formatter.scenario({
@@ -902,21 +902,21 @@ formatter.match({
   "location": "GC_SD_Mercury.the_user_is_on_the_overview_page()"
 });
 formatter.result({
-  "duration": 23922787,
+  "duration": 1833084230,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_export_button()"
 });
 formatter.result({
-  "duration": 25883581,
+  "duration": 309064512,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_document_is_downloaded()"
 });
 formatter.result({
-  "duration": 108092570,
+  "duration": 86848102,
   "status": "passed"
 });
 formatter.uri("restonDropDown.feature");
@@ -958,28 +958,28 @@ formatter.match({
   "location": "GC_SD_Mercury.the_application_is_opened()"
 });
 formatter.result({
-  "duration": 3298954843,
+  "duration": 1748448272,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.valid_username_and_password_are_entered()"
 });
 formatter.result({
-  "duration": 1432151432,
+  "duration": 1879710518,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_login_button()"
 });
 formatter.result({
-  "duration": 156419345,
+  "duration": 80053070,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_is_in_AssignForce()"
 });
 formatter.result({
-  "duration": 17363,
+  "duration": 15253,
   "status": "passed"
 });
 formatter.scenario({
@@ -1009,21 +1009,21 @@ formatter.match({
   "location": "GC_SD_Mercury.the_user_is_on_the_locations_page()"
 });
 formatter.result({
-  "duration": 41247470,
+  "duration": 1923186405,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_user_clicks_the_reston_drop_down()"
 });
 formatter.result({
-  "duration": 29071580,
+  "duration": 626081327,
   "status": "passed"
 });
 formatter.match({
   "location": "GC_SD_Mercury.the_locations_are_opened()"
 });
 formatter.result({
-  "duration": 20669,
+  "duration": 87356117,
   "status": "passed"
 });
 });

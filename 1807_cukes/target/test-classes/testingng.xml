@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name = "SuiteToRunTests" parallel = "false">
+<suite name = "SuiteToRunTests" parallel = "true">
 	
 	<listeners>
 		<listener class-name="com.revature.cucumberop.CustomReporter"></listener>
