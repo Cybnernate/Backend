@@ -76,7 +76,7 @@ public class GC_SD_Mercury {
 		LoginPage.user(driver).sendKeys(props.getProperty("verifyLogin.username"));
 
 		//wait.until(ExpectedConditions.elementToBeClickable(LoginPage.pass(driver)));
-		driver.manage().timeouts().implicitlywait(15, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		LoginPage.pass(driver).sendKeys(props.getProperty("verifyLogin.password"));
 	}
 
@@ -85,7 +85,7 @@ public class GC_SD_Mercury {
 	public void the_user_clicks_login_button() throws Throwable {
 
 		//wait.until(ExpectedConditions.elementToBeClickable(LoginPage.submit(driver)));
-		driver.manage().timeouts().implicitlywait(15, TimeUnit.SECONDS); 
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS); 
 		actions.moveToElement(LoginPage.submit(driver)).click().perform();;
 	}
 
