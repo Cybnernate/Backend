@@ -59,8 +59,8 @@ public class GC_SD_Mercury {
 		wait = new WebDriverWait(driver,22);
 		actions = new Actions(driver);
 		driver.get("https://assignforce-client.cfapps.io");
-		currTest = new P2TestAnn("verifyOpenApplication", "Pass", null);
-		tester.insertTestData(currTest);
+		//currTest = new P2TestAnn("verifyOpenApplication", "Pass", null);
+		//tester.insertTestData(currTest);
 	}
 
 //	public static void launchApplication() {
@@ -91,7 +91,7 @@ public class GC_SD_Mercury {
 
 	@Then("^user should be able to gain access to the application$")
 	public void user_should_be_able_to_gain_access_to_the_application() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//tester.update_test_data(currTest.getTid(), "Pass");
 		//driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 	}
 
@@ -105,8 +105,8 @@ public class GC_SD_Mercury {
 	@Given("^the user is logged in$")
 	public void the_user_is_logged_in() throws Throwable {
 	    System.out.println("I'm logged in");
-	    currTest = new P2TestAnn("verifyOverview", "Fail", null);
-		tester.insertTestData(currTest);
+	   // currTest = new P2TestAnn("verifyOverview", "Fail", null);
+		//tester.insertTestData(currTest);
 	}
 
 	@When("^the user clicks on Overview tab$")
@@ -123,7 +123,7 @@ public class GC_SD_Mercury {
 
 	@Then("^the user goes to the overview$")
 	public void the_user_goes_to_the_overview() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//tester.update_test_data(currTest.getTid(), "Pass");
 		driver.close();
 	}
 
@@ -133,8 +133,8 @@ public class GC_SD_Mercury {
 	//EXPORT CSV************************************************
 	@Given("^the user is on the overview page$")
 	public void the_user_is_on_the_overview_page() throws Throwable {
-		currTest = new P2TestAnn("verifyExportCSV", "Fail", null);
-		tester.insertTestData(currTest);
+		//currTest = new P2TestAnn("verifyExportCSV", "Fail", null);
+		//tester.insertTestData(currTest);
 		try {
 			actions.moveToElement(OverviewPage.overviewTab(driver)).click().perform();
 		}
@@ -155,7 +155,7 @@ public class GC_SD_Mercury {
 
 	@Then("^the document is downloaded$")
 	public void the_document_is_downloaded() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//tester.update_test_data(currTest.getTid(), "Pass");
 		driver.quit();
 	}
 
@@ -164,8 +164,8 @@ public class GC_SD_Mercury {
 	// Add a focus***********************************************
 	@Given("^the user is on the curricula page$")
 	public void the_user_is_on_the_curricula_page() throws Throwable {
-		currTest = new P2TestAnn("verifyAddFocus", "Fail", null);
-		tester.insertTestData(currTest);
+		//currTest = new P2TestAnn("verifyAddFocus", "Fail", null);
+		//tester.insertTestData(currTest);
 		try {
 			actions.moveToElement(CurriculaPage.curriculaTab(driver)).click().perform();
 		} catch (Exception e) {
@@ -226,7 +226,7 @@ public class GC_SD_Mercury {
 
 	@Then("^the user has added a skill$")
 	public void the_user_has_added_a_skill() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//tester.update_test_data(currTest.getTid(), "Pass");
 		driver.quit();
 	}
 
@@ -235,8 +235,8 @@ public class GC_SD_Mercury {
 	// add new skill*********************************************
 	@When("^the user clicks the skill button$")
 	public void the_user_clicks_the_skill_button() throws Throwable {
-		currTest = new P2TestAnn("verifySkill", "Fail", null);
-		tester.insertTestData(currTest);
+		//currTest = new P2TestAnn("verifySkill", "Fail", null);
+		//tester.insertTestData(currTest);
 		try {
 			actions.moveToElement(CurriculaPage.addSkillButton(driver)).click().perform();
 		} catch (Exception e) {
@@ -265,7 +265,7 @@ public class GC_SD_Mercury {
 
 	@Then("^the user has added a focus$")
 	public void the_user_has_added_a_focus() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//tester.update_test_data(currTest.getTid(), "Pass");
 		driver.quit();
 	}
 	// *********************************************************
@@ -273,8 +273,8 @@ public class GC_SD_Mercury {
 	// delete trainer*******************************************
 	@Given("^the user is on the trainer page$")
 	public void the_user_is_on_the_trainer_page() throws Throwable {
-		currTest = new P2TestAnn("verifyTrainer", "Fail", null);
-		tester.insertTestData(currTest);
+		//currTest = new P2TestAnn("verifyTrainer", "Fail", null);
+		//tester.insertTestData(currTest);
 		try {
 			actions.moveToElement(TrainerPage.trainerTab(driver)).click().perform();
 		} catch (Exception e) {
@@ -293,7 +293,7 @@ public class GC_SD_Mercury {
 
 	@Then("^the trainer is deleted$")
 	public void the_trainer_is_deleted() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//tester.update_test_data(currTest.getTid(), "Pass");
 		driver.quit();
 	}
 	// **********************************************************
@@ -301,8 +301,8 @@ public class GC_SD_Mercury {
 	// download resume*******************************************
 	@When("^the user clicks the download resume button$")
 	public void the_user_clicks_the_download_resume_button() throws Throwable {
-		currTest = new P2TestAnn("verifyDownloadResume", "Fail", null);
-		tester.insertTestData(currTest);
+		//currTest = new P2TestAnn("verifyDownloadResume", "Fail", null);
+		//tester.insertTestData(currTest);
 		try {
 			actions.moveToElement(TrainerPage.downloadResume(driver)).click().perform();
 		} catch (Exception e) {
@@ -312,7 +312,7 @@ public class GC_SD_Mercury {
 
 	@Then("^the resume is downloaded$")
 	public void the_resume_is_downloaded() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//tester.update_test_data(currTest.getTid(), "Pass");
 		driver.quit();
 	}
 	// **********************************************************
@@ -320,8 +320,8 @@ public class GC_SD_Mercury {
 	// editCapital One*******************************************
 	@Given("^the user is on the locations page$")
 	public void the_user_is_on_the_locations_page() throws Throwable {
-		currTest = new P2TestAnn("verifyEditCapitalOne", "Fail", null);
-		tester.insertTestData(currTest);
+		//currTest = new P2TestAnn("verifyEditCapitalOne", "Fail", null);
+		//tester.insertTestData(currTest);
 		try {
 			actions.moveToElement(LocationsPage.locationsTab(driver)).click().perform();
 		} catch (Exception e) {
@@ -367,7 +367,7 @@ public class GC_SD_Mercury {
 
 	@Then("^capital one is updated$")
 	public void capital_one_is_updated() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//tester.update_test_data(currTest.getTid(), "Pass");
 		driver.quit();
 	}
 	// **********************************************************
@@ -375,8 +375,8 @@ public class GC_SD_Mercury {
 	// reston drop down******************************************
 	@When("^the user clicks the reston drop down$")
 	public void the_user_clicks_the_reston_drop_down() throws Throwable {
-		currTest = new P2TestAnn("verifyRestonDropdown", "Fail", null);
-		tester.insertTestData(currTest);
+		//currTest = new P2TestAnn("verifyRestonDropdown", "Fail", null);
+		//tester.insertTestData(currTest);
 		try {
 			actions.moveToElement(LocationsPage.restonDropDown(driver)).click().perform();
 		} catch (Exception e) {
@@ -386,7 +386,8 @@ public class GC_SD_Mercury {
 
 	@Then("^the locations are opened$")
 	public void the_locations_are_opened() throws Throwable {
-		tester.update_test_data(currTest.getTid(), "Pass");
+		//
+		.update_test_data(currTest.getTid(), "Pass");
 		driver.quit();
 	}
 	//**********************************************************
