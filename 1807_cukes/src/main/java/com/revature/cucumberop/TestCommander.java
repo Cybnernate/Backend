@@ -16,7 +16,7 @@ public static void main(String[] args) {
 		TestListenerAdapter tla = new TestListenerAdapter();
 		TestNG testng = new TestNG();
 		ArrayList<String> tests = new ArrayList<String>();
-		tests.add("C:\Program Files\Apache\apache-maven-3.5.4\bin\testingng.xml");
+		tests.add("C:\\Program Files\\Apache\\apache-maven-3.5.4\\bin\\testingng.xml");
 		testng.setTestSuites(tests);
 		testng.addListener(tla);
 		testng.run();
